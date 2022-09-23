@@ -1,0 +1,297 @@
+// Responsive (HOME)
+
+@media screen and (max-width: 1100px) {
+    .dessert {
+        .dessert-flex {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .content {
+        .content-flex {
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        .content-flex {
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: auto;
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .wrapper header {
+
+        .search-bar {
+            width: 300px;
+        }
+
+        nav {
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: rgba(0,0,0,.9);
+            -webkit-backdrop-filter: saturate(180%) blur(5px);
+            backdrop-filter: saturate(180%) blur(5px);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -100%;
+            transition: all .5s ease-in-out;
+
+            .nav-list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                    padding: 15px 0;
+                }
+
+                a {
+                    color: white;
+                }
+
+                .nav-active {
+                    color: black;
+                    background-color: white;
+                    padding: 10px 20px;
+                    border-radius: 50px;
+    
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        nav.mobile-menu {
+            margin-left: 0;
+        }
+
+
+        .menu {
+            display: block;
+            z-index: 1000;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    footer {
+        .footer-copyright {
+            flex-direction: column;
+
+            a {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .content {
+        .content-flex {
+            .content-card {
+                figure {
+                    .content-img {
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .wrapper {
+        header {
+            height: 55px;
+
+            .search-bar {
+                height: 33px;
+
+                input {
+                    font-size: 13px;
+                }
+            }
+
+            .menu i {
+                font-size: 15px;
+            }
+        }
+
+        .home {
+            text-align: center;
+
+            .home-container {
+                h1 {
+                    font-size: 60px;
+                }
+    
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .content 
+    .content-bigtitle {
+        h1 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .dessert 
+    .dessert-bigtitle {
+        h1 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .newsletters {
+        .newsletter-container {
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            .newsletter-btn {
+                input,a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .newsletters {
+        .newsletter-btn {
+
+            flex-direction: column;
+            a {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        .home {
+
+            .home-container {
+                h1 {
+                    font-size: 50px;
+                }
+
+                a {
+                    font-size: 13px;
+                }
+    
+            }
+        }
+    }
+
+    .content {
+        .content-flex {
+            .content-card {
+                figure {
+                    .content-img {
+                        height: 200px;
+
+                        img {
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Responsive (CONTACT)
+
+@media screen and (max-width: 900px) {
+
+    .wrapper {
+        header {
+            width: 100%;
+        }
+    }
+
+    .contact 
+    .contact-box {
+        flex-direction: column;
+
+        .contact-box-left {
+            width: 100%;
+        }
+
+        .contact-box-right {
+            width: 100%;
+        }   
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .wrapper 
+    header 
+    .nav-list {
+        a {
+            font-size: 13px;
+        }
+    }
+
+    .contact 
+    .contact-box 
+    .contact-box-right 
+    .contact-right{
+        h1 {
+            font-size: 35px;
+        }
+
+        p,.field,a {
+            font-size: 12px;
+        }
+    }
+}

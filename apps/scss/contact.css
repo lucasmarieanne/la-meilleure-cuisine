@@ -1,0 +1,191 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 70px;
+  padding: 0 5%;
+  background-color: white;
+  z-index: 1000;
+}
+
+.wrapper header .nav-list li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.wrapper header .nav-list a {
+  font-size: 14px;
+  -webkit-transition: color 600ms;
+  transition: color 600ms;
+}
+
+.wrapper header .nav-list a:hover {
+  color: #ff4b4b;
+}
+
+.wrapper header .nav-list .nav-active {
+  color: white;
+  background-color: #2d2d2d;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.wrapper header .nav-list .nav-active:hover {
+  color: white;
+}
+
+.wrapper header .menu {
+  margin-left: 20px;
+  display: none;
+}
+
+.wrapper header .menu i {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #2d2d2d;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.contact {
+  height: 100%;
+  width: 100%;
+}
+
+.contact .contact-box {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.contact .contact-box .contact-box-left {
+  height: 100%;
+  width: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url(../images/herbe.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url(../images/herbe.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact .contact-box .contact-box-right {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-box .contact-box-right .contact-right {
+  padding: 40px;
+}
+
+.contact .contact-box .contact-box-right .contact-right h1 {
+  font-size: 45px;
+  font-style: italic;
+  color: #2d2d2d;
+}
+
+.contact .contact-box .contact-box-right .contact-right p {
+  position: relative;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin: 10px 0 50px 0;
+  color: #2d2d2d;
+}
+
+.contact .contact-box .contact-box-right .contact-right .field {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #e4e4e4;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  font-size: 13px;
+  -webkit-transition: border 250ms ease-in-out;
+  transition: border 250ms ease-in-out;
+}
+
+.contact .contact-box .contact-box-right .contact-right .field:focus-visible {
+  border: 1px solid black;
+}
+
+.contact .contact-box .contact-box-right .contact-right .email:invalid {
+  background-color: #d24343;
+  color: white;
+}
+
+.contact .contact-box .contact-box-right .contact-right ::-webkit-input-placeholder {
+  color: #2d2d2d;
+}
+
+.contact .contact-box .contact-box-right .contact-right :-ms-input-placeholder {
+  color: #2d2d2d;
+}
+
+.contact .contact-box .contact-box-right .contact-right ::-ms-input-placeholder {
+  color: #2d2d2d;
+}
+
+.contact .contact-box .contact-box-right .contact-right ::placeholder {
+  color: #2d2d2d;
+}
+
+.contact .contact-box .contact-box-right .contact-right .area {
+  outline: none;
+  min-height: 150px;
+}
+
+.contact .contact-box .contact-box-right .contact-right a {
+  display: inline-block;
+  font-size: 14px;
+  background-color: #2d2d2d;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 20px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.contact .contact-box .contact-box-right .contact-right a:hover {
+  background-color: #525252;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper header {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
